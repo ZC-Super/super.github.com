@@ -7,7 +7,7 @@ body {
 	line-height: 16px;
 }
 
-#in {
+#input {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -34,7 +34,7 @@ body {
 	box-sizing: border-box;
 }
 
-#out {
+#output {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -44,8 +44,8 @@ body {
 	padding: 10px;
 	padding-left: 20px;
 	color: #444;
-	font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
-	font-size: 16px;
+	font-family: Georgia, Palatino, '微软雅黑', Times, 'Times New Roman', serif;
+	font-size: 14px;
 	line-height: 1.5em
 }
 
