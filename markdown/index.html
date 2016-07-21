@@ -4,8 +4,8 @@
 	<meta>
 	<meta charset="utf-8">
 	<title>Markdown API文档编辑器</title>
-	<link rel="stylesheet" href="css/base16-light.css">
 	<link rel="stylesheet" href="codemirror/lib/codemirror.css">
+	<link rel="stylesheet" href="codemirror/theme/panda-syntax.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/markdown-it.js"></script>
 	<script src="js/markdown-it-footnote.js"></script>
@@ -85,9 +85,6 @@ $(function(){
 	<a id="close-menu">&times;</a>
 </div>
 <script type="text/javascript">
-    //var URL = window.URL || window.webkitURL || window.mozURL || window.msURL;
-    //navigator.saveBlob = navigator.saveBlob || navigator.msSaveBlob || navigator.mozSaveBlob || navigator.webkitSaveBlob;
-    //window.saveAs = window.saveAs || window.webkitSaveAs || window.mozSaveAs || window.msSaveAs;
 
 var languageOverrides = {
 	js: 'javascript',
@@ -137,10 +134,10 @@ function setOutput(val){
 
 var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
 	mode: 'gfm',
-	lineNumbers: false,
+	lineNumbers: true,
 	matchBrackets: true,
 	lineWrapping: true,
-	theme: 'base16-light',
+	theme: 'panda-syntax',
 	extraKeys: {"Enter": "newlineAndIndentContinueMarkdownList"}
 });
 
